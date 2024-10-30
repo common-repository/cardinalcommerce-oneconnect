@@ -1,0 +1,43 @@
+{
+    "environments": {
+        "PROD": {
+            "title": "Production",
+            "description": "Production payment processing",
+            "centinelConfig": {
+                "transactionUrl": "https://centinel600.cardinalcommerce.com/maps/txns.asp",
+                "merchantConfigUrl": "",
+                "merchantReportsUrl": ""
+            },
+            "songbirdConfig": {
+                "songbirdJsUrl": "https://songbird.cardinalcommerce.com/edge/v1/songbird.js"
+            },
+            "builds": "all"
+        },
+        "STAG": {
+            "title": "Centinel Test",
+            "description": "Payment processing test environment",
+            "centinelConfig": {
+                "transactionUrl": "https://centineltest.cardinalcommerce.com/maps/txns.asp",
+                "merchantConfigUrl": "",
+                "merchantReportsUrl": ""
+            },
+            "songbirdConfig": {
+                "songbirdJsUrl": "https://songbirdstag.cardinalcommerce.com/cardinalcruise/v1/songbird.js"
+            },
+            "builds": "all"
+        },
+        "DEV": {
+            "title": "Development",
+            "centinelConfig": {
+                "transactionUrl": "https://directadev.cardinalabs.com/maps/txns.asp",
+                "merchantConfigUrl": "https://centinelportaldev.cardinalabs.com/",
+                "merchantReportsUrl": "https://centinelportaldev.cardinalabs.com/"
+            },
+            "songbirdConfig": {
+                "songbirdJsUrl": "https://utildev.cardinalabs.com/cardinalcruise/v1/songbird.js"
+            },
+            "builds": "dev"
+        }
+    },
+    "defaultEnvironmentKey": "PROD"
+}

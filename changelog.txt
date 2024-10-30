@@ -1,0 +1,27 @@
+*** CardinalCommerce OneConnect 3D-Secure for Authorize.net Changelog ***
+
+2018.06.08 - version 1.2.4
+ * Add emulation mode for testing transactions as admin
+
+2018.05.22 - version 1.2.3
+ * Place fraud filtered orders in state returned by processor
+
+2018.04.16 - version 1.2.2
+ * Add handling for Authorize.net fraud detection codes
+
+2018.04.03 - version 1.2.1
+ * Add email and invoice number to authorization
+ * Add action code to order details
+
+2018.03.28 - version 1.2.0
+ * Operability with a wider variety of WooCommerce configurations
+ * Simplify plugin configuration by removing Processor ID, Merchant ID, and Transaction Password
+ * Support payment brand icon customization
+
+2017.11.07 - version 1.1.0
+ * Added Enable / Disable gateway functionality in settings
+ * Add payment brand logos to payment gateway
+ * Fixed jQuery reload bug, ensuring plugin functionality even if jQuery is loaded twice
+
+2017.04.12 - version 1.0
+ * First release
